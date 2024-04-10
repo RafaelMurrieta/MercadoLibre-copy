@@ -217,9 +217,23 @@
                         android:id="@+id/recyclerIcons"
                         app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"
                         android:orientation="horizontal"/>
-                    
                 </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent">
+                <RelativeLayout
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/addborder">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/loreal"/>
+                </RelativeLayout>
+            </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -5,6 +5,7 @@
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
         <style name="AppTheme" parent="Theme.Material3.Dark.NoActionBar">
+            <item name="barcolor">@color/seed</item>
             <item name="colorPrimary">@color/md_theme_dark_primary</item>
             <item name="colorOnPrimary">@color/md_theme_dark_onPrimary</item>
             <item name="colorPrimaryContainer">@color/md_theme_dark_primaryContainer</item>

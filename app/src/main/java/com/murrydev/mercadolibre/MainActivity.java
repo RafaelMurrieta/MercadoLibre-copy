@@ -2,6 +2,7 @@ package com.murrydev.mercadolibre;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.SearchView;
@@ -43,6 +44,10 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        TypedArray barC = obtainStyledAttributes(new int[]{R.attr.barcolor});
+        int barTint = barC.getColor(0, 0);
+        barC.recycle();
+        getWindow().setStatusBarColor(barTint);
 
         RecyclerView recyclerView = findViewById(R.id.recyclerIcons);
         ArrayList<String> arrayList = new ArrayList<>();

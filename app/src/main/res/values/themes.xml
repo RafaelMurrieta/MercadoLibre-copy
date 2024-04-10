@@ -7,6 +7,7 @@
 
     <style name="Theme.MercadoLibre" parent="Base.Theme.MercadoLibre" />
         <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
+            <item name="barcolor">@color/seed</item>
             <item name="colorPrimary">@color/md_theme_light_primary</item>
             <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>
             <item name="colorPrimaryContainer">@color/md_theme_light_primaryContainer</item>
