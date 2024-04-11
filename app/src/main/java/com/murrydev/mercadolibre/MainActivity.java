@@ -4,6 +4,7 @@ import android.app.ActivityOptions;
 import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.SearchView;
 
@@ -12,32 +13,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.appbar.MaterialToolbar;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
+    List<liselement> elements;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         SearchView searchView = findViewById(R.id.searchView);
-       /* searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                return false;
-            }
-        });
-        */
-
         setContentView(R.layout.activity_main);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -69,5 +60,31 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         recyclerView.setAdapter(adapter);
+
+        init();
+    }
+
+    public void cartView(View view){
+        Intent cart = new Intent(this, cartpurchase.class);
+        startActivity(cart);
+    }
+
+    public void direction(View view){
+        Intent direct = new Intent(this, directions.class);
+        startActivity(direct);
+    }
+
+    public  void init(){
+        elements = new ArrayList<>();
+        elements.add(new liselement("Visto recientemente","Motherboard","$40000","@drawable/moderboard"));
+        elements.add(new liselement("Te podria interesar","Motherboard","$40000","@drawable/moderboard"));
+        elements.add(new liselement("Lo quieres","Motherboard","$40000","@drawable/moderboard"));
+        elements.add(new liselement("LLevate tu favorito","Motherboard","$40000","@drawable/moderboard"));
+
+        listAdapterCard listAdapter = new listAdapterCard(elements, this);
+        RecyclerView recyclerView = findViewById(R.id.recicleCards);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setAdapter(listAdapter);
     }
 }

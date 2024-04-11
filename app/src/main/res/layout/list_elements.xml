@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true">
+        <RelativeLayout
+            android:id="@+id/imagecontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="6dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:id="@+id/texttop"
+                    android:textSize="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Por que te puede gustar" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iconImage"
+                android:padding="4dp"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="13dp"
+                android:src="@drawable/moderboard"/>
+
+            <LinearLayout
+                android:layout_width="176dp"
+                android:layout_height="69dp"
+                android:layout_below="@+id/iconImage"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="6dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="3dp"
+               >
+
+                <TextView
+                    android:id="@+id/titlep"
+                    android:layout_width="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_height="wrap_content"
+                    android:text="Kit de Actualizacion gamer Ryzen 5 500 G + Motherboard A520m "></TextView>
+                <TextView
+                    android:id="@+id/pricep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$3,759"></TextView>
+                <TextView
+                    android:textColor="@color/green_light"
+                    android:textSize="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Envio gratis"></TextView>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
