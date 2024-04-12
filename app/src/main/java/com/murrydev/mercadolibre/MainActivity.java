@@ -87,4 +87,9 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(listAdapter);
     }
+
+    public void productView(View view){
+        Intent product = new Intent(this, productView.class);
+        startActivity(product);
+    }
 }
