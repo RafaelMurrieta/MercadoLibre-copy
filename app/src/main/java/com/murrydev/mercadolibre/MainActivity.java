@@ -45,12 +45,12 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add("https://http2.mlstatic.com/storage/homes-korriban/assets/images/quick_access/home_row_mercado_pago_carousel_mobile.webp");
         arrayList.add("https://http2.mlstatic.com/storage/homes-korriban/assets/images/quick_access/home_row_ofertas_carousel_mobile.webp");
         arrayList.add("https://http2.mlstatic.com/storage/homes-korriban/assets/images/quick_access/home_row_supermercado_carousel_mobile.webp");
-        arrayList.add("https://http2.mlstatic.com/storage/homes-korriban/assets/images/quick_access/home_row_mercado_pago_carousel_mobile.webp");
-        arrayList.add("https://http2.mlstatic.com/storage/homes-korriban/assets/images/quick_access/home_row_ofertas_carousel_mobile.webp");
-        arrayList.add("https://http2.mlstatic.com/storage/homes-korriban/assets/images/quick_access/home_row_supermercado_carousel_mobile.webp");
-        arrayList.add("https://http2.mlstatic.com/storage/homes-korriban/assets/images/quick_access/home_row_mercado_pago_carousel_mobile.webp");
-        arrayList.add("https://http2.mlstatic.com/storage/homes-korriban/assets/images/quick_access/home_row_ofertas_carousel_mobile.webp");
-        arrayList.add("https://http2.mlstatic.com/storage/homes-korriban/assets/images/quick_access/home_row_supermercado_carousel_mobile.webp");
+        arrayList.add("https://http2.mlstatic.com/storage/homes-korriban/assets/images/quick_access/home_row_celulares_carousel_mobile.webp");
+        arrayList.add("https://http2.mlstatic.com/storage/homes-korriban/assets/images/quick_access/home_row_style_summer_carousel_mobile.webp");
+        arrayList.add("https://http2.mlstatic.com/storage/homes-korriban/assets/images/quick_access/home_row_vehiculos_carousel_red2_mobile.webp");
+        arrayList.add("https://http2.mlstatic.com/storage/homes-korriban/assets/images/quick_access/home_row_best_sellers_carousel_mobile.webp");
+        arrayList.add("https://http2.mlstatic.com/storage/homes-korriban/assets/images/quick_access/home_row_computacion_carousel_mobile.webp");
+        arrayList.add("https://http2.mlstatic.com/storage/homes-korriban/assets/images/quick_access/home_row_armchair_carousel_mobile.webp");
 
         imageAdapter adapter = new imageAdapter(MainActivity.this, arrayList);
         adapter.setOnItemClickListener(new imageAdapter.OnItemClickListener() {
@@ -76,9 +76,9 @@ public class MainActivity extends AppCompatActivity {
 
     public  void init(){
         elements = new ArrayList<>();
-        elements.add(new liselement("Visto recientemente","Motherboard","$40000","@drawable/moderboard"));
-        elements.add(new liselement("Te podria interesar","Motherboard","$40000","@drawable/moderboard"));
-        elements.add(new liselement("Lo quieres","Motherboard","$40000","@drawable/moderboard"));
+        elements.add(new liselement("Visto recientemente","Kit de actualizacion Gamer AMD Ryzen 5 5600g + A520","$4,000","@drawable/moderboard"));
+        elements.add(new liselement("Te podria interesar","Comodas pantunflas de gato","$109","@drawable/pantun"));
+        elements.add(new liselement("Lo quieres","Cinturon coach Reversible Soble vista","$311","@drawable/cinto"));
         elements.add(new liselement("LLevate tu favorito","Motherboard","$40000","@drawable/moderboard"));
 
         listAdapterCard listAdapter = new listAdapterCard(elements, this);

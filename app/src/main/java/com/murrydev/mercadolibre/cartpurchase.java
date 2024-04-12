@@ -43,9 +43,9 @@ public class cartpurchase extends AppCompatActivity {
 
     public  void init(){
         elements = new ArrayList<>();
-        elements.add(new liselement("Visto recientemente","Motherboard","$40000","@drawable/moderboard"));
-        elements.add(new liselement("Te podria interesar","Motherboard","$40000","@drawable/moderboard"));
-        elements.add(new liselement("Lo quieres","Motherboard","$40000","@drawable/moderboard"));
+        elements.add(new liselement("Visto recientemente","Kit de actualizacion Gamer AMD Ryzen 5 5600g + A520","$4,000","@drawable/moderboard"));
+        elements.add(new liselement("Te podria interesar","Comodas pantunflas de gato","$109","@drawable/pantun"));
+        elements.add(new liselement("Lo quieres","Cinturon coach Reversible Soble vista","$311","@drawable/cinto"));
         elements.add(new liselement("LLevate tu favorito","Motherboard","$40000","@drawable/moderboard"));
 
         listAdapterCard listAdapter = new listAdapterCard(elements, this);
