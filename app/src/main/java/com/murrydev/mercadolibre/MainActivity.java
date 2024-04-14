@@ -3,10 +3,14 @@ package com.murrydev.mercadolibre;
 import android.app.ActivityOptions;
 import android.content.Intent;
 import android.content.res.TypedArray;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.SearchView;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +23,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.appbar.MaterialToolbar;
 
+import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -89,7 +94,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void productView(View view){
-        Intent product = new Intent(this, productView.class);
-        startActivity(product);
+        ImageView imageView = findViewById(R.id.iconImage);
+        Drawable imagenDraw = imageView.getDrawable();
+
+        TextView precioTextView = findViewById(R.id.pricep);
+        String precioString = precioTextView.getText().toString();
+        precioString = precioString.replaceAll("[^\\d.]", "");
+        float precio = Float.parseFloat(precioString);
+
+        Bitmap bitmap = ((BitmapDrawable) imagenDraw).getBitmap();
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
+        byte[] imagenBytes = stream.toByteArray();
+
+        Intent productIntent = new Intent(this, productView.class);
+        productIntent.putExtra("imagend", imagenBytes);
+        productIntent.putExtra("precio", precio);
+        startActivity(productIntent);
+
     }
+
 }
