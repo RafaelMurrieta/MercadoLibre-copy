@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     List<liselement> elements;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         SearchView searchView = findViewById(R.id.searchView);

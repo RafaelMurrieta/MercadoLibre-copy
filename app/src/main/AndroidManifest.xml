@@ -28,6 +28,7 @@
             android:name=".ImageViewActivity"
             android:exported="false" />
         <activity
+            android:theme="@style/splashtheme"
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

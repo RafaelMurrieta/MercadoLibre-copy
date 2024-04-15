@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/seed" />
+    <item>
+        <bitmap
+            android:src="@drawable/logom__1_"
+            android:gravity="center"
+            android:width="40dp"
+            android:height="40dp"
+        />
+    </item>
+</layer-list>
