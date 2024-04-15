@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
+    <color name="textgray">#80777777</color>
+    <color name="itemBack">#F5F5F5</color>
+    <color name="blueAnim">#2968C8</color>
+    <color name="morShaleOrange">#f73</color>
     <color name="btndiscover">#4B8FF6</color>
     <color name="background">#EBEBEB</color>
     <color name="purpleMeli">#602290</color>

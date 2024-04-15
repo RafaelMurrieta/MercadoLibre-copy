@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.SearchView;
@@ -107,9 +108,15 @@ public class MainActivity extends AppCompatActivity {
         bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
         byte[] imagenBytes = stream.toByteArray();
 
+
+        TextView titlep = findViewById(R.id.titlep);
+        String titleptext = String.valueOf(titlep.getText());
+
         Intent productIntent = new Intent(this, productView.class);
         productIntent.putExtra("imagend", imagenBytes);
         productIntent.putExtra("precio", precio);
+
+        productIntent.putExtra("title", titleptext);
         startActivity(productIntent);
 
     }

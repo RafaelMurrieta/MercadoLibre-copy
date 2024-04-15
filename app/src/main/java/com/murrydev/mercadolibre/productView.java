@@ -43,7 +43,20 @@ public class productView extends AppCompatActivity {
         ImageView imageView = findViewById(R.id.imageView);
         imageView.setImageBitmap(imagen);
 
-        TextView precioTextView = findViewById(R.id.title);
+        TextView precioTextView = findViewById(R.id.precio);
         precioTextView.setText(String.format(Locale.getDefault(), "$%.2f", precio));
+
+        TextView titlePro = findViewById(R.id.titleProcut);
+        String title = intent.getStringExtra("title");
+        titlePro.setText(title);
+
+        double msiNumber = precio / 12;
+        String formattedMsi = String.format(Locale.getDefault(), "%.2f", msiNumber);
+
+        TextView contmsi = findViewById(R.id.msi);
+        String textorign = contmsi.getText().toString();
+        String newmsi = textorign + formattedMsi;
+        contmsi.setText(newmsi);
+
     }
 }
