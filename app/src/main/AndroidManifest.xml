@@ -16,6 +16,9 @@
         tools:overrideLibrary="com.android.car.ui"
         tools:targetApi="31">
         <activity
+            android:name=".oferts"
+            android:exported="false" />
+        <activity
             android:name=".productView"
             android:exported="false" />
         <activity
@@ -28,9 +31,9 @@
             android:name=".ImageViewActivity"
             android:exported="false" />
         <activity
-            android:theme="@style/splashtheme"
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/splashtheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

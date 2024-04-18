@@ -17,16 +17,18 @@ public class listAdapterCard extends RecyclerView.Adapter<listAdapterCard.ViewHo
     private LayoutInflater minflater;
     private Context context;
 
+    @Override
+    public int getItemCount() {
+        return mData.size();
+    }
+
     public listAdapterCard(List<liselement> itemList, Context context){
         this.minflater = LayoutInflater.from(context);
         this.context = context;
         this.mData = itemList;
     }
 
-    @Override
-    public int getItemCount() {
-        return mData.size();
-    }
+
 
     @Override
     public listAdapterCard.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
