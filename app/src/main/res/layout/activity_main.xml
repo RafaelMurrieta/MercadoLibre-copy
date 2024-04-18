@@ -188,15 +188,18 @@
                     android:textColor="@color/white"
                     android:textSize="12sp" />
 
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:layout_width="wrap_content"
+                <ImageButton
+                    android:onClick="addIMage"
+                    android:layout_width="80dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center|center_horizontal"
-                    android:src="@drawable/pill_meliplus" />
+                    android:background="@drawable/pill_meliplus" />
 
-                <com.google.android.material.imageview.ShapeableImageView
+                <ImageButton
+                    android:onClick="addIMage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@null"
                     android:layout_gravity="end|center_vertical"
                     android:src="@drawable/arrowleftwhite" />
             </LinearLayout>

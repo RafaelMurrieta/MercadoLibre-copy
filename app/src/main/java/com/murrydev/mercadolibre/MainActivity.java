@@ -119,7 +119,11 @@ public class MainActivity extends AppCompatActivity {
 
         productIntent.putExtra("title", titleptext);
         startActivity(productIntent);
+    }
 
+    public void addIMage(View view){
+        Intent add = new Intent(this, meli_activity.class);
+        startActivity(add);
     }
 
 }
