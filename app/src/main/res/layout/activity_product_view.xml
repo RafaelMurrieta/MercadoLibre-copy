@@ -91,13 +91,13 @@
         android:layout_marginTop="5dp"
         app:layout_constraintTop_toBottomOf="@+id/navbar"
         tools:layout_editor_absoluteX="0dp">
-        <com.google.android.material.textview.MaterialTextView
+        <TextView
             android:layout_marginLeft="20dp"
             android:textColor="@color/textgray"
             android:textSize="9dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nuevo | +500 vendidos"/>
+            android:text="@string/nuevo_500_vendidos"/>
         <com.google.android.material.textview.MaterialTextView
             android:textColor="@color/textgray"
             android:layout_marginLeft="150dp"
@@ -105,7 +105,7 @@
             android:layout_marginRight="2dp"
             android:layout_height="wrap_content"
             android:textSize="9dp"
-            android:text="4.7"/>
+            android:text="@string/_4_7"/>
         <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="13dp"
             android:layout_height="13dp"
@@ -154,7 +154,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/titleProcut"
         android:orientation="horizontal">
-        <com.google.android.material.textview.MaterialTextView
+        <TextView
             android:padding="1dp"
             android:textColor="@color/white"
             android:textAlignment="center"
@@ -164,13 +164,13 @@
             android:layout_width="90dp"
             android:layout_height="wrap_content"
             android:textSize="13sp"
-            android:text="MAS VENDIDO"/>
+            android:text="@string/mas_vendido"/>
         <com.google.android.material.textview.MaterialTextView
             android:textSize="12sp"
             android:textColor="@color/blueAnim"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="3° en Computadoras y Servidores"/>
+            android:text="@string/_3_en_compras_y_ofertas"/>
     </LinearLayout>
     
     <LinearLayout
@@ -251,17 +251,17 @@
             android:id="@+id/msi"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="En 12x $"
+            android:text="@string/en_12x"
             android:textStyle="bold"/>
-        <com.google.android.material.textview.MaterialTextView
+        <TextView
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="IVA Incluido"
+            android:text="@string/iva_incluido"
             />
-        <com.google.android.material.textview.MaterialTextView
+        <TextView
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="Ver los metodos de pago"
+            android:text="@string/ver_los_metodos_de_pago"
             android:textColor="@color/blueAnim"
             android:layout_marginTop="7dp"/>
         <LinearLayout
@@ -269,15 +269,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <com.google.android.material.textview.MaterialTextView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/green_light"
-                android:text="Llega gratis "/>
-            <com.google.android.material.textview.MaterialTextView
+                android:text="@string/llega_gratis"/>
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="el míercoles "/>
+                android:text="@string/el_m_ercoles"/>
         </LinearLayout>
         <LinearLayout
             android:layout_marginTop="10dp"
@@ -288,35 +288,35 @@
                 android:layout_width="15dp"
                 android:layout_height="15dp"
                 android:background="@drawable/pepiconspencilpinpointcircle"/>
-            <com.google.android.material.textview.MaterialTextView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:textColor="@color/blueAnim"
-                android:text=" Más formas de entrega"/>
+                android:text="@string/m_s_formas_de_entrega"/>
         </LinearLayout>
-        <com.google.android.material.textview.MaterialTextView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:textStyle="bold"
-            android:text="Stock disponible"/>
+            android:text="@string/stock_disponible"/>
         <LinearLayout
             android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <com.google.android.material.textview.MaterialTextView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Almacenado y enviado por "/>
+                android:text="@string/almacenado_y_enviado_por"/>
             <com.google.android.material.imageview.ShapeableImageView
                 android:layout_width="15dp"
                 android:layout_height="15dp"
                 android:background="@drawable/claritylightningsolid"/>
-            <com.google.android.material.textview.MaterialTextView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="FULL"
+                android:text="@string/full"
                 android:textStyle="italic"
                 android:textColor="@color/green_light"
                 android:textSize="13dp"/>

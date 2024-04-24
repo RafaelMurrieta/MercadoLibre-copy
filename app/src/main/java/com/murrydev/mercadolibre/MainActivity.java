@@ -116,7 +116,6 @@ public class MainActivity extends AppCompatActivity {
         Intent productIntent = new Intent(this, productView.class);
         productIntent.putExtra("imagend", imagenBytes);
         productIntent.putExtra("precio", precio);
-
         productIntent.putExtra("title", titleptext);
         startActivity(productIntent);
     }

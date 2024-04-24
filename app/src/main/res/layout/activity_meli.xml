@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:textSize="17sp"
-                android:text="Meli+"/>
+                android:text="@string/meli"/>
 
         </LinearLayout>
 
@@ -63,14 +63,14 @@
                     android:layout_width="100dp"
                     android:layout_height="40dp"
                     android:background="@drawable/pill_meliplus"/>
-                <com.google.android.material.textview.MaterialTextView
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textAlignment="center"
-                    android:text="Consigue envíos gratis, películas, series y música"/>
+                    android:text="@string/consigue_env_os_gratis_pel_culas_series_y_m_sica"/>
 
                 <LinearLayout
                     android:layout_width="300dp"
@@ -84,18 +84,18 @@
                         android:layout_width="40dp"
                         android:layout_height="30dp"
                         android:background="@drawable/marcadolibre"/>
-                    <com.google.android.material.textview.MaterialTextView
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ENVÍOS GRATIS"
+                        android:text="@string/env_os_gratis"
                         android:textSize="15sp"
                         android:textStyle="bold"
                         android:layout_marginTop="5dp"/>
-                    <com.google.android.material.textview.MaterialTextView
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="13sp"
-                        android:text="EN MILLONES DE PRODUCTOS"
+                        android:text="@string/en_millones_de_productos"
                         android:layout_marginTop="5dp"/>
                 </LinearLayout>
 
@@ -117,12 +117,12 @@
                             android:layout_width="90dp"
                             android:layout_height="30dp"
                             android:background="@drawable/disney_logo"/>
-                        <com.google.android.material.textview.MaterialTextView
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:textSize="10sp"
-                            android:text="SIN CARGO"
+                            android:text="@string/sin_cargo"
                             android:textStyle="bold"/>
                     </LinearLayout>
                     <LinearLayout
@@ -137,12 +137,12 @@
                             android:layout_width="90dp"
                             android:layout_height="30dp"
                             android:background="@drawable/star_logo"/>
-                        <com.google.android.material.textview.MaterialTextView
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:textSize="10sp"
-                            android:text="SIN CARGO"
+                            android:text="@string/sin_cargos"
                             android:textStyle="bold"/>
                     </LinearLayout>
                     <LinearLayout
@@ -158,12 +158,12 @@
                             android:layout_width="70dp"
                             android:layout_height="20dp"
                             android:background="@drawable/deezer_logo_dsk"/>
-                        <com.google.android.material.textview.MaterialTextView
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:textSize="10sp"
-                            android:text="12 MESES SIN CARGO"
+                            android:text="@string/_12_meses_sin_cargo"
                             android:textAlignment="center"
                             android:textStyle="bold"/>
                     </LinearLayout>
@@ -175,10 +175,10 @@
                     android:textAlignment="center"
                     android:gravity="center"
                     android:orientation="vertical">
-                    <com.google.android.material.textview.MaterialTextView
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Suscribete por"
+                        android:text="@string/suscribete_por"
                         android:textStyle="bold"/>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -189,15 +189,15 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
-                            android:textSize="45sp"
-                            android:text="$ 129"
+                            android:textSize="35sp"
+                            android:text="@string/_129"
                             android:textStyle="bold"/>
-                        <com.google.android.material.textview.MaterialTextView
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:textSize="20sp"
-                            android:text="/mes"
+                            android:text="@string/mes"
                             android:textStyle="bold"/>
                     </LinearLayout>
 
@@ -209,13 +209,13 @@
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/cuadradoadd"
                         android:padding="10dp">
-                        <com.google.android.material.textview.MaterialTextView
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:textStyle="bold"
                             android:textColor="@color/purpleMeli"
-                            android:text="También puedes llegar sumando puntos"/>
+                            android:text="@string/tambi_n_puedes_llegar_sumando_puntos"/>
                         <com.google.android.material.imageview.ShapeableImageView
                             android:layout_gravity="end"
                             android:layout_width="20dp"
@@ -233,7 +233,7 @@
                         android:layout_width="300dp"
                         android:padding="10dp"
                         android:layout_height="wrap_content"
-                        android:text="Envíos gratis en millones de productos desde $149"
+                        android:text="@string/env_os_gratis_en_millones_de_productos_desde_149"
                         android:textSize="15sp"
                         android:textStyle="bold"/>
                     <LinearLayout
@@ -252,10 +252,10 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
-                        <com.google.android.material.textview.MaterialTextView
+                        <TextView
                             android:layout_width="300dp"
                             android:layout_height="wrap_content"
-                            android:text="Además, puedes elegir un dia de la semana para resibir tus compras con"/>
+                            android:text="@string/adem_s_puedes_elegir_un_dia_de_la_semana_para_resibir_tus_compras_con"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -276,7 +276,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Suscribirme a Mell+"
+                android:text="@string/subMeli"
                 android:backgroundTint="@color/btndiscover"/>
         </LinearLayout>
         <LinearLayout
@@ -285,25 +285,25 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center">
-            <com.google.android.material.textview.MaterialTextView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="10sp"
                 android:textColor="@color/txttermy"
-                android:text="Al suscribirte, aceptas los "/>
-            <com.google.android.material.textview.MaterialTextView
+                android:text="@string/al_suscribirte_aceptas_los"/>
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/btndiscover"
                 android:textSize="10sp"
-                android:text="Términos y condiciones de Meli+"/>
+                android:text="@string/t_rminos_y_condiciones_de_meli"/>
         </LinearLayout>
-        <com.google.android.material.textview.MaterialTextView
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textSize="10sp"
             android:textColor="@color/txttermy"
-            android:text="Puedes cancelar cuando quieras."/>
+            android:text="@string/puedes_cancelar_cuando_quieras"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

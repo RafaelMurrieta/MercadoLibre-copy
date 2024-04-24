@@ -1,7 +1,9 @@
 package com.murrydev.mercadolibre;
 
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
@@ -37,13 +39,17 @@ public class oferts extends AppCompatActivity {
         init();
     }
 
+    public void cartViewbutton(View view){
+        Intent cart = new Intent(this, cartpurchase.class);
+        startActivity(cart);
+    }
     public void init(){
         elements = new ArrayList<>();
-        elements.add(new ofertElement("Oferta 1", "@drawable/icoutlinelocaloffer"));
-        elements.add(new ofertElement("Oferta 1", "@drawable/icoutlinelocaloffer"));
-        elements.add(new ofertElement("Oferta 1", "@drawable/icoutlinelocaloffer"));
-        elements.add(new ofertElement("Oferta 1", "@drawable/icoutlinelocaloffer"));
-        elements.add(new ofertElement("Oferta 1", "@drawable/icoutlinelocaloffer"));
+        elements.add(new ofertElement("Todas las ofertas", "@drawable/icoutlinelocaloffer"));
+        elements.add(new ofertElement("Ofertas relampago", "@drawable/lightblue"));
+        elements.add(new ofertElement("Mobile y Smartwatches", "@drawable/celulcaricon"));
+        elements.add(new ofertElement("Martes descuentos", "@drawable/sudaderaicon"));
+        elements.add(new ofertElement("Ofertas celulares", "@drawable/icoutlinelocaloffer"));
 
         ofertAdapter ofertAdapter = new ofertAdapter(elements, this);
         RecyclerView recyclerView = findViewById(R.id.iconlistrecycle);
